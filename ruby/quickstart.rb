@@ -43,6 +43,6 @@ service.authorization = authorize
 
 # Prints the title of the sample doc:
 # https://docs.google.com/document/d/195j9eDD3ccgjQRttHhJPymLJUCOUjs-jmwTrekvdjFE/edit
-document_id = "195j9eDD3ccgjQRttHhJPymLJUCOUjs-jmwTrekvdjFE"
+document_id = ARGV.pop
 document = service.get_document document_id
 puts "The title of the document is: #{document.title}."
